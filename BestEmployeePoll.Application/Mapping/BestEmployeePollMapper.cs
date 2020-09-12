@@ -1,6 +1,4 @@
-﻿using BestEmployeePoll.Common.Entities;
-using BestEmployeePoll.Shared.Resources;
-using RestApi.Application.Mapping;
+﻿using RestApi.Application.Mapping;
 
 namespace BestEmployeePoll.Application.Mapping
 {
@@ -8,9 +6,6 @@ namespace BestEmployeePoll.Application.Mapping
     {
         public BestEmployeePollMapper()
         {
-            CreateMap<PersonCreateResource, PersonEntity>();
-            CreateMap<PersonResource, PersonEntity>();
-            CreateMap<PersonEntity, PersonResource>().ForMember(m => m.Manager, o => o.Ignore());
         }
     }
 }
