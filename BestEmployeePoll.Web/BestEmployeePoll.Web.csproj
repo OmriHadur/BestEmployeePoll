@@ -37,6 +37,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="RestApi.Application">
+      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Application.dll</HintPath>
+    </Reference>
     <Reference Include="RestApi.Shared">
       <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Shared.dll</HintPath>
     </Reference>

@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using MongoDB.Bson.Serialization.Attributes;
 using RestApi.Common.Entities;
 
 namespace BestEmployeePoll.Common.Entities
@@ -18,7 +17,6 @@ namespace BestEmployeePoll.Common.Entities
         [StringLength(25)]
         public string LastName { get; set; }
 
-        [BsonId]
         public string Manager { get; set; }
 
         public string[] Employees { get; set; }

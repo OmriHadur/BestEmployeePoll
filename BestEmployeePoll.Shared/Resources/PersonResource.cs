@@ -12,5 +12,7 @@ namespace BestEmployeePoll.Shared.Resources
 
         public PersonResource Manager { get; set; }
         public PersonResource[] Employees { get; set; }
+
+        public bool IsManager => Employees.Length > 0;
     }
 }
