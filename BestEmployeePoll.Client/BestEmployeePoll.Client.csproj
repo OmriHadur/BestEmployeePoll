@@ -1,15 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RestApi.Client" Version="1.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BestEmployeePoll.Shared\BestEmployeePoll.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RestApi.Client">
+      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="RestApi.Shared">
+      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Shared.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

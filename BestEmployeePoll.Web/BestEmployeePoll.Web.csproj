@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -13,14 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="RestApi.Client" Version="1.0.0" />
-    <PackageReference Include="RestApi.Common" Version="1.0.0" />
-    <PackageReference Include="RestApi.Persistence" Version="1.0.0" />
-    <PackageReference Include="RestApi.Shared" Version="1.0.0" />
-    <PackageReference Include="RestApi.Web" Version="1.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BestEmployeePoll.Application\BestEmployeePoll.Application.csproj" />
     <ProjectReference Include="..\BestEmployeePoll.Client\BestEmployeePoll.Client.csproj" />
     <ProjectReference Include="..\BestEmployeePoll.Common\BestEmployeePoll.Common.csproj" />
@@ -30,6 +22,27 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.8" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.11.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Unity" Version="5.11.7" />
+    <PackageReference Include="Unity.Microsoft.DependencyInjection" Version="5.11.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RestApi.Shared">
+      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="RestApi.Web">
+      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Web.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 

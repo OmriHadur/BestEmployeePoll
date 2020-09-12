@@ -5,13 +5,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RestApi.Application" Version="1.0.0" />
-    <PackageReference Include="RestApi.Common" Version="1.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BestEmployeePoll.Common\BestEmployeePoll.Common.csproj" />
     <ProjectReference Include="..\BestEmployeePoll.Shared\BestEmployeePoll.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RestApi.Application">
+      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="RestApi.Common">
+      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="RestApi.Shared">
+      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Shared.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
