@@ -24,6 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="RestApi.Client">
+      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Client.dll</HintPath>
+    </Reference>
     <Reference Include="RestApi.Shared">
       <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Shared.dll</HintPath>
     </Reference>
