@@ -6,6 +6,8 @@ namespace BestEmployeePoll.Shared.Errors
 {
     public enum BadRequestReasonExtended
     {
-        ManagerHasStaff=5
+        ManagerHasStaff=5,
+        EndBeforeStart,
+        NotSameVoteGroup
     }
 }
