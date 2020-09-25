@@ -11,9 +11,9 @@ namespace BestEmployeePoll.Web.Controllers
     [ApiController]
     public class EmployeesController : RestController<EmployeeCreateResource, EmployeeResource>
     {
-        public override Task<ActionResult<IEnumerable<EmployeeResource>>> Query(QueryResource query)
+        public override Task<ActionResult<IEnumerable<EmployeeResource>>> Get()
         {
-            return base.Query(query);
+            return base.Get();
         }
     }
 }
