@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using BestEmployeePoll.Shared.Resources;
 using RestApi.Web.Controllers;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using RestApi.Shared.Query;
 
 namespace BestEmployeePoll.Web.Controllers
 {
@@ -8,6 +11,9 @@ namespace BestEmployeePoll.Web.Controllers
     [ApiController]
     public class EmployeesController : RestController<EmployeeCreateResource, EmployeeResource>
     {
-
+        public override Task<ActionResult<IEnumerable<EmployeeResource>>> Query(QueryResource query)
+        {
+            return base.Query(query);
+        }
     }
 }

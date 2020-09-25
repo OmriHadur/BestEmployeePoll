@@ -6,6 +6,6 @@ namespace BestEmployeePoll.Common.Applications
 {
     public interface IPollGroupsApplication : IRestApplication<PollGroupCreateResource, PollGroupResource>
     {
-        Task<bool> AreInSameVoteGroup(string voteId,params string[] emplyees);
+        Task<bool> AreInSameVoteGroup(string pollId, params string[] emplyees);
     }
 }

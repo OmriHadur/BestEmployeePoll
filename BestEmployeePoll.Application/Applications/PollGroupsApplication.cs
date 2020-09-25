@@ -1,5 +1,6 @@
 using BestEmployeePoll.Common.Applications;
 using BestEmployeePoll.Common.Entities;
+using BestEmployeePoll.Common.Repositories;
 using BestEmployeePoll.Shared.Resources;
 using RestApi.Application;
 using RestApi.Common;
@@ -10,9 +11,9 @@ namespace BestEmployeePoll.Application
     [Inject]
     public class PollGroupsApplication : RestApplication<PollGroupCreateResource, PollGroupResource, PollGroupEntity>, IPollGroupsApplication
     {
-        public async Task<bool> AreInSameVoteGroup(string voteId, params string[] emplyees)
+        public Task<bool> AreInSameVoteGroup(string pollId, params string[] emplyees)
         {
-            return true;
+            return (Repository as IPollGroupsRepository).AreInSameVoteGroup(pollId, emplyees);
         }
     }
 }

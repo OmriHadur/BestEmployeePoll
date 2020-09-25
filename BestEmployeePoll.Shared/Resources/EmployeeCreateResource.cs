@@ -20,6 +20,8 @@ namespace BestEmployeePoll.Shared.Resources
         [MaxLength(25)]
         public string LastName { get; set; }
 
+        public int Age { get; set; }
+
         public string Manager { get; set; }
     }
 }

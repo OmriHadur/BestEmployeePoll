@@ -10,7 +10,7 @@ namespace BestEmployeePoll.Shared.Resources
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
-
+        public int Age { get; set; }
         public string Manager { get; set; }
         public string[] Staff { get; set; }
         public bool IsManager { get; set; }
