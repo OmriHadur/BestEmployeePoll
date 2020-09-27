@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RestApi.Tests.ResourceTests;
+using Core.Server.Tests.ResourceTests;
 using BestEmployeePoll.Shared.Resources;
 using BestEmployeePoll.Shared.Errors;
 

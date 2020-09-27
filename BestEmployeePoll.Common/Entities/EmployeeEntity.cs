@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using RestApi.Common.Entities;
+using Core.Server.Common.Entities;
 
 namespace BestEmployeePoll.Common.Entities
 {

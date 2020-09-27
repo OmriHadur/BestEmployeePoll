@@ -13,11 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="RestApi.Common">
-      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Common.dll</HintPath>
+    <Reference Include="Core.Server.Common">
+      <HintPath>E:\Workspace\RetailShopping\Core.Server\Output\Server\netcoreapp3.1\Core.Server.Common.dll</HintPath>
     </Reference>
-    <Reference Include="RestApi.Persistence">
-      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Persistence.dll</HintPath>
+    <Reference Include="Core.Server.Persistence">
+      <HintPath>E:\Workspace\RetailShopping\Core.Server\Output\Server\netcoreapp3.1\Core.Server.Persistence.dll</HintPath>
     </Reference>
   </ItemGroup>
 

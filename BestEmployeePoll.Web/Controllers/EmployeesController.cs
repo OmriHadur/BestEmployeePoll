@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using BestEmployeePoll.Shared.Resources;
-using RestApi.Web.Controllers;
+using Core.Server.Web.Controllers;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using RestApi.Shared.Query;
+using Core.Server.Shared.Query;
 
 namespace BestEmployeePoll.Web.Controllers
 {

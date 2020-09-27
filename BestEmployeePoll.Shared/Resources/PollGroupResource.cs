@@ -1,4 +1,4 @@
-using RestApi.Shared.Resources;
+using Core.Server.Shared.Resources;
 
 namespace BestEmployeePoll.Shared.Resources
 {

@@ -3,8 +3,8 @@ using BestEmployeePoll.Common.Entities;
 using BestEmployeePoll.Shared.Errors;
 using BestEmployeePoll.Shared.Resources;
 using Microsoft.AspNetCore.Mvc;
-using RestApi.Application;
-using RestApi.Common;
+using Core.Server.Application;
+using Core.Server.Common;
 using System.Threading.Tasks;
 
 namespace BestEmployeePoll.Application

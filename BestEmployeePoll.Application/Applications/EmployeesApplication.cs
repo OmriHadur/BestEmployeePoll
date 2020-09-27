@@ -3,9 +3,9 @@ using BestEmployeePoll.Common.Entities;
 using BestEmployeePoll.Shared.Errors;
 using BestEmployeePoll.Shared.Resources;
 using Microsoft.AspNetCore.Mvc;
-using RestApi.Application;
-using RestApi.Common;
-using RestApi.Shared.Errors;
+using Core.Server.Application;
+using Core.Server.Common;
+using Core.Server.Shared.Errors;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

@@ -1,6 +1,6 @@
 using BestEmployeePoll.Shared.Resources;
 using BestEmployeePoll.Standard.Client.Interfaces;
-using RestApi.Client.Clients;
+using Core.Server.Client.Clients;
 
 namespace BestEmployeePoll.Standard.Client.Clients
 {

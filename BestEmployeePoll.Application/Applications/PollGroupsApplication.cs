@@ -2,8 +2,8 @@ using BestEmployeePoll.Common.Applications;
 using BestEmployeePoll.Common.Entities;
 using BestEmployeePoll.Common.Repositories;
 using BestEmployeePoll.Shared.Resources;
-using RestApi.Application;
-using RestApi.Common;
+using Core.Server.Application;
+using Core.Server.Common;
 using System.Threading.Tasks;
 
 namespace BestEmployeePoll.Application

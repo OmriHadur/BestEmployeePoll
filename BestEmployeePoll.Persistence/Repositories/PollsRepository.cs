@@ -1,7 +1,7 @@
 using BestEmployeePoll.Common.Entities;
 using BestEmployeePoll.Common.Repositories;
-using RestApi.Persistence.Repositories;
-using RestApi.Common;
+using Core.Server.Persistence.Repositories;
+using Core.Server.Common;
 
 namespace BestEmployeePoll.Persistence.Repositories
 {

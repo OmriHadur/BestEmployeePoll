@@ -35,14 +35,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="RestApi.Application">
-      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Application.dll</HintPath>
+    <Reference Include="Core.Server.Application">
+      <HintPath>E:\Workspace\RetailShopping\Core.Server\Output\Server\netcoreapp3.1\Core.Server.Application.dll</HintPath>
     </Reference>
-    <Reference Include="RestApi.Shared">
-      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Shared.dll</HintPath>
+    <Reference Include="Core.Server.Shared">
+      <HintPath>E:\Workspace\RetailShopping\Core.Server\Output\Server\netcoreapp3.1\Core.Server.Shared.dll</HintPath>
     </Reference>
-    <Reference Include="RestApi.Web">
-      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Web.dll</HintPath>
+    <Reference Include="Core.Server.Web">
+      <HintPath>E:\Workspace\RetailShopping\Core.Server\Output\Server\netcoreapp3.1\Core.Server.Web.dll</HintPath>
     </Reference>
   </ItemGroup>
 

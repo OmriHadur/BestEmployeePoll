@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
-using RestApi.Web;
+using Core.Server.Web;
 
 namespace BestEmployeePoll.Web
 {
-    public class Startup : RestApiStartup
+    public class Startup : CoreServerStartup
     {
         public Startup(IConfiguration configuration)
             :base(configuration)

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using RestApi.Web;
+using Core.Server.Web;
 using Unity;
 using Unity.Microsoft.DependencyInjection;
 

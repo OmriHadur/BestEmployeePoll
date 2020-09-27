@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using BestEmployeePoll.Shared.Resources;
-using RestApi.Web.Controllers;
+using Core.Server.Web.Controllers;
 
 namespace BestEmployeePoll.Web.Controllers
 {

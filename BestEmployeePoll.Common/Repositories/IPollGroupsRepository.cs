@@ -1,5 +1,5 @@
 using BestEmployeePoll.Common.Entities;
-using RestApi.Common.Repositories;
+using Core.Server.Common.Repositories;
 using System.Threading.Tasks;
 
 namespace BestEmployeePoll.Common.Repositories

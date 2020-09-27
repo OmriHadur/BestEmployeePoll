@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using BestEmployeePoll.Common.Entities;
 using BestEmployeePoll.Shared.Resources;
-using RestApi.Common;
-using RestApi.Common.Mapping;
+using Core.Server.Common;
+using Core.Server.Common.Mapping;
 
-namespace RestApi.Application.Mapping
+namespace Core.Server.Application.Mapping
 {
     [InjectMany]
     public class PollMapping : IResourceMapper

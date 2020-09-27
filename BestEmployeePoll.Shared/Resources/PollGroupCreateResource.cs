@@ -1,4 +1,4 @@
-using RestApi.Shared.Resources;
+using Core.Server.Shared.Resources;
 using System.ComponentModel.DataAnnotations;
 
 namespace BestEmployeePoll.Shared.Resources

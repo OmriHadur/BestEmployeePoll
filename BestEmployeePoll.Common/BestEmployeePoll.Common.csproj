@@ -14,11 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="RestApi.Common">
-      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Common.dll</HintPath>
+    <Reference Include="Core.Server.Common">
+      <HintPath>E:\Workspace\RetailShopping\Core.Server\Output\Server\netcoreapp3.1\Core.Server.Common.dll</HintPath>
     </Reference>
-    <Reference Include="RestApi.Shared">
-      <HintPath>..\..\..\..\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Shared.dll</HintPath>
+    <Reference Include="Core.Server.Shared">
+      <HintPath>E:\Workspace\RetailShopping\Core.Server\Output\Server\netcoreapp3.1\Core.Server.Shared.dll</HintPath>
     </Reference>
   </ItemGroup>
 

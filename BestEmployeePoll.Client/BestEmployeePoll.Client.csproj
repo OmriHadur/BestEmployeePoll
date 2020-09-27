@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -13,11 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="RestApi.Client">
-      <HintPath>E:\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Client.dll</HintPath>
+    <Reference Include="Core.Server.Client">
+      <HintPath>..\..\..\..\Workspace\RetailShopping\Core.Server\Output\Server\netcoreapp3.1\Core.Server.Client.dll</HintPath>
     </Reference>
-    <Reference Include="RestApi.Shared">
-      <HintPath>E:\Workspace\RestApi\Output\netcoreapp3.1\RestApi.Shared.dll</HintPath>
+    <Reference Include="Core.Server.Shared">
+      <HintPath>..\..\..\..\Workspace\RetailShopping\Core.Server\Output\Server\netcoreapp3.1\Core.Server.Shared.dll</HintPath>
     </Reference>
   </ItemGroup>
 

@@ -1,5 +1,5 @@
 using BestEmployeePoll.Shared.Resources;
-using RestApi.Common.Applications;
+using Core.Server.Common.Applications;
 using System.Threading.Tasks;
 
 namespace BestEmployeePoll.Common.Applications

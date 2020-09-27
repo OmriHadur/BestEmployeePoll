@@ -1,4 +1,4 @@
-using RestApi.Tests.ResourceCreators;
+using Core.Server.Tests.ResourceCreators;
 using BestEmployeePoll.Shared.Resources;
 
 namespace BestEmployeePoll.Test.ResourceCreators

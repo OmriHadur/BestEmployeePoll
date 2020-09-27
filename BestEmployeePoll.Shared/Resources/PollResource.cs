@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
-using RestApi.Shared.Resources;
+using Core.Server.Shared.Resources;
 using System;
 
 namespace BestEmployeePoll.Shared.Resources
