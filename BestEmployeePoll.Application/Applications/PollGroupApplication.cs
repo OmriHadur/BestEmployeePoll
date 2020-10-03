@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 namespace BestEmployeePoll.Application
 {
     [Inject]
-    public class PollGroupsApplication : RestApplication<PollGroupCreateResource, PollGroupResource, PollGroupEntity>, IPollGroupsApplication
+    public class PollGroupApplication : 
+        RestApplication<PollGroupCreateResource, PollGroupUpdateResource, PollGroupResource, PollGroupEntity>, IPollGroupApplication
     {
         public Task<bool> AreInSameVoteGroup(string pollId, params string[] emplyees)
         {
-            return (Repository as IPollGroupsRepository).AreInSameVoteGroup(pollId, emplyees);
+            return (Repository as IPollGroupRepository).AreInSameVoteGroup(pollId, emplyees);
         }
     }
 }

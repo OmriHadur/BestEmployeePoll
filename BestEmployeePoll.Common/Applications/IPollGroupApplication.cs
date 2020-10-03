@@ -4,7 +4,8 @@ using System.Threading.Tasks;
 
 namespace BestEmployeePoll.Common.Applications
 {
-    public interface IPollGroupsApplication : IRestApplication<PollGroupCreateResource, PollGroupResource>
+    public interface IPollGroupApplication : 
+        IRestApplication<PollGroupCreateResource, PollGroupUpdateResource, PollGroupResource>
     {
         Task<bool> AreInSameVoteGroup(string pollId, params string[] emplyees);
     }

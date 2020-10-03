@@ -8,18 +8,25 @@ using Core.Server.Common;
 using Core.Server.Shared.Errors;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
 
 namespace BestEmployeePoll.Application
 {
     [Inject]
-    public class EmployeesApplication : RestApplication<EmployeeCreateResource, EmployeeResource, EmployeeEntity>, IEmployeesApplication
+    public class EmployeeApplication : 
+        RestApplication<EmployeeCreateResource, EmployeeUpdateResource, EmployeeResource, EmployeeEntity>, IEmployeeApplication
     {
-        public async override Task<ActionResult<EmployeeResource>> Create(EmployeeCreateResource createResource)
+        protected async override Task<ActionResult> Validate(EmployeeCreateResource createResource)
         {
             var emailExists = await Repository.Exists(p => p.Email.Equals(createResource.Email));
             if (emailExists)
                 return BadRequest(BadRequestReason.SameExists);
 
+            return await base.Validate(createResource);
+        }
+
+        public async override Task<ActionResult<EmployeeResource>> Create(EmployeeCreateResource createResource)
+        {
             EmployeeEntity manager = null;
             if (!string.IsNullOrEmpty(createResource.Manager))
             {

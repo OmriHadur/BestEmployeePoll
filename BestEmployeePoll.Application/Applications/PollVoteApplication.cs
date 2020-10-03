@@ -11,10 +11,11 @@ using Unity;
 namespace BestEmployeePoll.Application
 {
     [Inject]
-    public class PollVotesApplication : RestApplication<PollVoteCreateResource, PollVoteResource, PollVoteEntity>, IPollVotesApplication
+    public class PollVoteApplication : 
+        RestApplication<PollVoteCreateResource, PollVoteUpdateResource, PollVoteResource, PollVoteEntity>, IPollVoteApplication
     {
         [Dependency]
-        public IPollGroupsApplication PollGroupsApplication;
+        public IPollGroupApplication PollGroupsApplication;
 
         public async override Task<ActionResult<PollVoteResource>> Create(PollVoteCreateResource createResource)
         {

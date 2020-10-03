@@ -3,7 +3,8 @@ using Core.Server.Client.Interfaces;
 
 namespace BestEmployeePoll.Standard.Client.Interfaces
 {
-    public interface IPollGroupsControllClient : IRestClient<PollGroupCreateResource, PollGroupResource>
+    public interface IPollGroupControllClient : 
+        IRestClient<PollGroupCreateResource,PollGroupUpdateResource, PollGroupResource>
     {
     }
 }

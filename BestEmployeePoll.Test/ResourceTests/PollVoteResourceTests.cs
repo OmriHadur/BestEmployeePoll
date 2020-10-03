@@ -5,7 +5,8 @@ using BestEmployeePoll.Shared.Resources;
 namespace BestEmployeePoll.Tests.RourcesTests
 {
     [TestClass]
-    public class PollVoteResourceTests : ResourceTests<PollVoteCreateResource, PollVoteResource>
+    public class PollVoteResourceTests : 
+        ResourceTests<PollVoteCreateResource,PollVoteUpdateResource, PollVoteResource>
     {
     }
 }

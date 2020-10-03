@@ -4,9 +4,8 @@ using Core.Server.Web.Controllers;
 
 namespace BestEmployeePoll.Web.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class PollGroupsController : RestController<PollGroupCreateResource, PollGroupResource>
+    public class PollGroupController : 
+        RestController<PollGroupCreateResource, PollGroupUpdateResource, PollGroupResource>
     {
     }
 }

@@ -3,7 +3,8 @@ using BestEmployeePoll.Shared.Resources;
 
 namespace BestEmployeePoll.Test.ResourceCreators
 {
-    public class PollVoteResourceCreator : RestResourceCreator<PollVoteCreateResource, PollVoteResource>
+    public class PollVoteResourceCreator : 
+        RestResourceCreator<PollVoteCreateResource,PollGroupUpdateResource, PollVoteResource>
     {
         public override void SetCreateResource(PollVoteCreateResource createResource)
         {

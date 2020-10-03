@@ -3,7 +3,8 @@ using Core.Server.Common.Repositories;
 
 namespace BestEmployeePoll.Common.Repositories
 {
-    public interface IPollVotesRepository : IRepository<PollVoteEntity>
+    public interface IPollVoteRepository : 
+        IRepository<PollVoteEntity>
     {
     }
 }

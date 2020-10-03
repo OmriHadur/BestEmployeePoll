@@ -6,7 +6,9 @@ using Core.Server.Common;
 namespace BestEmployeePoll.Persistence.Repositories
 {
     [Inject]
-    public class PollsRepository : MongoRepository<PollEntity>, IPollsRepository
+    public class EmployeeRepository : 
+        Repository<EmployeeEntity>, 
+        IEmployeeRepository
     {
     }
 }

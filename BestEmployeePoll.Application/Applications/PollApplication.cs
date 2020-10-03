@@ -10,13 +10,14 @@ using System.Threading.Tasks;
 namespace BestEmployeePoll.Application
 {
     [Inject]
-    public class PollsApplication : RestApplication<PollCreateResource, PollResource, PollEntity>, IPollsApplication
+    public class PollApplication : 
+        RestApplication<PollCreateResource, PollUpdateResource, PollResource, PollEntity>, IPollApplication
     {
-        public async override Task<ActionResult<PollResource>> Create(PollCreateResource createResource)
+        protected async override Task<ActionResult> Validate(PollCreateResource createResource)
         {
             if (createResource.End <= createResource.Starts)
                 return BadRequest(BadRequestReasonExtended.EndBeforeStart);
-            return await base.Create(createResource);
+            return await base.Validate(createResource);
         }
     }
 }

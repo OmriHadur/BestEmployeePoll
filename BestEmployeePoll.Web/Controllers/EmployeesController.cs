@@ -7,13 +7,8 @@ using Core.Server.Shared.Query;
 
 namespace BestEmployeePoll.Web.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class EmployeesController : RestController<EmployeeCreateResource, EmployeeResource>
+    public class EmployeesController : 
+        RestController<EmployeeCreateResource,EmployeeUpdateResource, EmployeeResource>
     {
-        public override Task<ActionResult<IEnumerable<EmployeeResource>>> Get()
-        {
-            return base.Get();
-        }
     }
 }
