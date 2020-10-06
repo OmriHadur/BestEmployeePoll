@@ -9,7 +9,7 @@ namespace BestEmployeePoll.Test.ResourceCreators
         public override void SetCreateResource(EmployeeCreateResource createResource)
         {
             base.SetCreateResource(createResource);
-            createResource.Manager = null;
+            createResource.ManagerId = null;
         }
     }
 }

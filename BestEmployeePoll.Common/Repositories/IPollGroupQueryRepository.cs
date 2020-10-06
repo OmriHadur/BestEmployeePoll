@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 
 namespace BestEmployeePoll.Common.Repositories
 {
-    public interface IPollGroupRepository : 
-        IRepository<PollGroupEntity>
+    public interface IPollGroupQueryRepository : 
+        IQueryRepository<PollGroupEntity>
     {
-        Task<bool> AreInSameVoteGroup(string pollId, string[] emplyees);
+        Task<bool> AreInSameVoteGroup(string pollId,params string[] emplyees);
     }
 }

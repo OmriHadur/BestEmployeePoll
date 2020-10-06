@@ -15,7 +15,7 @@ namespace BestEmployeePoll.Tests.RourcesTests
             var managerId = CreatedResource.Id;
             ResourcesHolder.Delete<EmployeeResource>(managerId);
 
-            var response = ResourcesHolder.EditAndCreate<EmployeeCreateResource, EmployeeUpdateResource, EmployeeResource >(u => u.Manager = managerId);
+            var response = ResourcesHolder.EditAndCreate<EmployeeCreateResource, EmployeeUpdateResource, EmployeeResource >(u => u.ManagerId = managerId);
 
             AssertNotFound(response);
         }
@@ -56,7 +56,7 @@ namespace BestEmployeePoll.Tests.RourcesTests
 
         private EmployeeResource GetEmployeeWithManager(string managerId)
         {
-            return ResourcesHolder.EditAndCreate<EmployeeCreateResource,EmployeeUpdateResource, EmployeeResource>(u => u.Manager = managerId).Value;
+            return ResourcesHolder.EditAndCreate<EmployeeCreateResource,EmployeeUpdateResource, EmployeeResource>(u => u.ManagerId = managerId).Value;
         }
     }
 }

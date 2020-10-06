@@ -19,6 +19,6 @@ namespace BestEmployeePoll.Shared.Resources
 
         public int Age { get; set; }
 
-        public string Manager { get; set; }
+        public string ManagerId { get; set; }
     }
 }

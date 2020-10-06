@@ -8,9 +8,9 @@ using System.Linq;
 namespace BestEmployeePoll.Persistence.Repositories
 {
     [Inject]
-    public class PollGroupRepository : 
-        Repository<PollGroupEntity>, 
-        IPollGroupRepository
+    public class PollGroupQueryRepository : 
+        QueryRepository<PollGroupEntity>,
+        IPollGroupQueryRepository
     {
         public async Task<bool> AreInSameVoteGroup(string pollId, string[] emplyees)
         {
